@@ -1,0 +1,172 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>sign up</title>    
+    <link rel="stylesheet" type="text/css" href="style.css">  
+<style>
+body
+{
+background-image:url("image7.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+ 
+</head>    
+<body>    
+    <h2>indian railway</h2><br>    
+    <div class="sign up">    
+    <form id="signup" method="get" action="signup.php">
+        <label><b>Firstname</label>
+        <input type="text" name="Firstname" id="Fname" placeholder="Firstname"><br><br>
+        <label><b>Lastname</label>
+        <input type="text" name="Lastname" id="Lname" placeholder="Lastname"><br><br>
+<label><b>
+gender:<br>
+</label>
+<input type="radio" value="Male" name="gender">Male<br>
+<input type="radio" value="Female"name="gender">Female<br>
+<input type="radio" value="Other"name="gender">Other<br><br>
+current Address:
+<textarea cols="50"rows="5"placeholder="Address">
+</textarea><br><br>
+
+
+
+
+
+
+
+       
+        <label><b>date of birth:</label>
+        <select date="datesdropdown" size="1">
+        <option value="choose">date</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="1">13</option>
+        <option value="1">14</option>
+        <option value="1">15</option>
+        <option value="1">16</option>
+        <option value="1">17</option>
+        <option value="1">18</option>
+        <option value="1">19</option>
+        <option value="1">20</option>
+        <option value="1">21</option>
+        <option value="1">22</option>
+        <option value="1">23</option>
+        <option value="1">24</option>
+        <option value="1">25</option>
+        <option value="1">26</option>
+        <option value="1">27</option>
+        <option value="1">28</option>
+        <option value="1">29</option>
+        <option value="1">30</option>
+        <option value="1">31</option>
+        </select>
+        <select name="monthdropdown" size="1">
+        <option value="choose">choose month</option>
+        <option value="january">January </option>
+<option value="choose">February </option>
+<option value="choose">March </option>
+<option value="choose">April </option>
+<option value="choose">May </option>
+<option value="choose">June </option>
+<option value="choose">July </option>
+<option value="choose">August </option>
+<option value="choose">September </option>
+<option value="choose">October </option>
+<option value="choose">November </option>
+<option value="choose">December</option>
+</select>
+<select name="yeardropdown" size="1">
+<option value="choose">choose year</option>
+<option value="1">2006</option>
+        <option value="2">2005</option>
+        <option value="3">2004</option>
+        <option value="4">2003</option>
+        <option value="5">2002</option>
+        <option value="6">2001</option>
+        <option value="7">2000</option>
+        <option value="8">1999</option>
+        <option value="9">1998</option>
+        <option value="10">1997</option>
+        <option value="11">1996</option>
+        <option value="12">1995</option>
+        <option value="13">1994</option>
+        <option value="14">1993</option>
+        <option value="15">1992</option>
+        <option value="16">1991</option>
+        <option value="17">1990</option>
+        <option value="18">1989</option>
+        <option value="19">1988</option>
+        <option value="20">1987</option>
+        <option value="21">1986</option>
+        <option value="22">1985</option>
+        <option value="1">1984</option>
+        <option value="1">1983</option>
+        <option value="1">1982</option>
+        <option value="1">1981</option>
+        <option value="1">1980</option>
+
+</select>
+<br><br>
+        <label><b>contact No</label>
+        <select name="codedropdown" size="1">
+<option value="choose">country code</option>
+<option value="choose">+91</option>
+<option value="choose">+23 </option>
+<option value="choose">+01</option>
+
+
+</select>
+        <input type="text" name="contact" id="contact" placeholder="enter your contact No">
+        <br><br>
+        <label><b>Email id    
+        </b>    
+        </label>
+        <input type="text" name="email id" id="email" placeholder="enter your email id">
+        <br><br>
+       
+        <label><b>username
+        <b>
+        </label>        
+        <input type="text" name="Uname" id="Uname" placeholder="create Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Retype Password">    
+        <br><br>        
+        <a href="railway project.html">
+        <input type="button" name="sign" id="log" value="sign up Here"></a>      
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span><label for="save for next">save for next</label></span>   
+        <br><br>    
+        <a href="railway project.html">COUNTINUE</a> 
+    </form>     
+</div>    
+</body>    
+</html>     
+
+
+
+
+
+
+
