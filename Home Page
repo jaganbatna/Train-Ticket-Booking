@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+ <html lang="en">
+ <head>
+   
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> Railway Reservation System</title> 
+    <style> 
+        html,body{
+        margin:0; 
+        padding:0px;
+        box-sizing: border-box;
+        background-image: url("train-railway-forest.jpg"); 
+        background-size: 1500px;
+        }
+
+        #nav-fixed{
+            position:relative;
+            width: 100%;
+            padding:10px 0; 
+            background-color:rgb(221, 236, 240); 
+            color: black; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            border-style:ridge;
+        }
+
+        ul{
+            margin: 15px; 
+            padding:0;
+           
+        }
+
+        li{    
+            display: inline;
+            margin: 15px 10px;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+            
+           
+        }
+        li:hover{
+            border-bottom:3px inset blue;
+            color: blue;
+            cursor:pointer;
+            
+        }
+
+        .active{
+            color: blue;
+            border-bottom:3px solid blue;
+        }
+        .signup-form{
+            width:500px;
+            background-color:rgba(0, 0, 0,0.3);
+            border:rgba(0, 0, 0,0.4);
+            border-style:solid;
+            border-width:5px;
+            height: 500px;
+            padding: 15px;
+            margin-left: 10%;
+            margin-top: 5%;
+            margin-bottom:10%;
+        
+        }
+        .Signup-head{
+            padding:80px;
+            margin-bottom:-78px;
+            margin-top:-50px;
+        
+            
+        }
+        .signup-content .radio{
+            margin:10px 10px;
+    }
+    .signup-content2 .input{
+        width:400px;
+        padding:10px;
+        margin:10px;
+        color:rgb(9, 9, 9);
+    }
+    .signup-content2 .tarikh{
+        margin:10px;
+        padding:10px;
+        color:rgb(10, 10, 10);
+    }
+    .signup-content2  .person{
+        padding:10px;
+        margin:10px;
+        color:rgb(10, 10, 10);
+    }
+    .signup-content2 .travel{
+        margin:20px 20px;
+    }
+    .signup-content2 .travel2{
+        padding:5px;
+    }
+    .signup-content2 .submit-btn{
+        border:none;
+        outline:none;
+        width:200px;
+        height:50px;
+        padding:10px;
+        margin-right:100px;
+        margin-top: 20px;
+        margin-left:100px ;
+    }
+      .submit-btn.bg-warning{
+           cursor: pointer;
+        }
+        .text-white.travel{
+            cursor: pointer;
+        }
+        .flip-icon{
+            color: black;
+            height: 400px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .form-popup {
+ width: 100%;
+  height:100%;
+  background-color: black;
+  opacity: 0.96;
+  position: fixed;
+
+  left: 0;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  display: none;
+}
+.popup{
+ min-width: 500px;
+  min-height: 300px;
+  background-color:white;
+  border-radius: 8px;
+  text-align: center;
+  padding:10px 10px 10px 10px;
+margin:0px 5px 0px 5px ;
+}
+h1{
+    color:white;
+}
+.signup-content2.text-white.travel{
+    color: white;
+}
+</style> 
+</head> 
+<body>
+    <nav id="nav-fixed">
+                     <ul>
+                        <li class="active">HOME</li>
+                        <li><span class="meal"></div><a href="meals.html">MEALS</a></span></li>
+                        <li><a href="holiday packages.html">holiday PACKAGES</a></li>
+                        <li><a href="service.html">SERVICE AT STATION</a></li>
+                        <li><a href="contact us .html">CONTACT US</a></li>
+                        <li ><a href="log in page.html">login here</a></li>
+                        
+
+                    </ul>    
+            </div>
+        </div>
+    </nav> 
+    <form>
+
+        <div class="signup-form ">
+
+            <div class="Signup-head ">
+                <h1>Reserve Your Ticket</h1>
+            </div>
+
+            <div class="signup-content">
+                <input type="radio" class="radio" name="r">
+                <label class="text-white" style="color: white;">One Way</label>
+                <input type="radio" class="radio" name="r">
+                <label class="text-white" style="color: white;">Return</label>
+            </div>
+
+            <div class="signup-content2">
+                <input type="text" placeholder="From" class="input">
+                <input type="text" placeholder="To" class="input "><br>
+            
+
+            <label class="text-white" style="margin-left:10px; color: white;">Depart</label>
+            <input type="date" class="tarikh bg-dark text-white">
+            <label class="text-white" style="margin-left:10px; color: white;">Return</label>
+            <input type="date" class="tarikh bg-dark">
+
+            <input type="number" class="bg-dark person" placeholder="Adults">
+            <input type="number" class="bg-dark person" placeholder="Children"><br>
+
+            <label class="text-white travel" style="color: white;">Travel Class</label>
+            <select class="bg-dark text-white travel2">
+                <option></option>
+                <option>First Class/1A</option>
+                <option>AC 2tier/2A</option>
+                <option>AC 3tier/3A</option>
+                <option>Executive class chair car/Economy Class</option>
+                <option>AC Chair Car</option>
+                <option>Sleeper Class</option>
+                <option>Second Class</option>
+                <option>General</option>
+            </select>
+
+            <button class="submit-btn bg-warning" type="button" onclick="trainB()">Check Availability</button>
+
+    <div class="form-popup" id="bookTrain">
+    <div class="popup">
+    <h1>Your Train Is On Time</h1> <br>
+    <h2>Check Contact Us For More Details</h2>
+    <button type="button" class="hide" onclick="trainC()">Close</button>
+    </div> </div>
+        </div>
+        </div>
+    </form>
+ <script>
+    
+  function trainB(){
+    document.getElementById("bookTrain").style.display = "flex";
+  }
+  
+  function trainC(){
+    document.getElementById("bookTrain").style.display = "none";
+  }
+ </script>
+   
+</body> 
+</html>
